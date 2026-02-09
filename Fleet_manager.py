@@ -84,9 +84,18 @@ def update_members(names,ranks,ids):
 def display_roster(names,ranks,divs,ids):
     for i in range(len(ids)):
         print(f'name:',names[i],'rank:',ranks[i],'Divison:',divs[i],'ID:',ids[i])
-        
+
+def search_crew(names,ranks,divs,ids):
+    term = input("Please type a term:")
+    Found = False
+    for i in range(len(names)):
+        if term.lower() in names[i].lower():
+            print(f'Name:',names[i],'Rank:',ranks[i],'Division:',divs[i],'ID:',ids[i])
+            Found = True 
+    if not Found:
+        print("None were found")
+    return names,ranks,divs,ids        
     
-    return names,ranks,divs,ids
 def filter_by_division(names,divs):
     div_ask = input("What is the divsion: ")
     for i in range(len(divs)):
