@@ -113,6 +113,21 @@ def count_officers(ranks):
     print("Total Captains or Commanders:",total)
 
 
+def calculate_payroll(ranks):
+    count = 0
+    for i in range(len(ranks)):
+        if ranks[i] == "Captain":
+            count += 1000
+        elif ranks[i] == "Commander":
+            count += 500
+        elif ranks[i] == "Lt.Commander":
+            count += 400
+        elif ranks[i] == "Lieutenant":
+            count += 100
+    print("Total cost of crew:",count)
+    return ranks
+
+
 
 
 
