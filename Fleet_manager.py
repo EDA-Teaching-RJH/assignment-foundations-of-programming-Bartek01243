@@ -61,7 +61,15 @@ def add_members(names,ranks,divs,ids):
 
     return names, ranks , divs , ids
     
-
+def remove_members(names,ranks,divs,ids):
+    id_slct = input("What is the id of the person you are trying to delete:")
+    index = ids.index(id_slct)
+    names.pop(index)
+    ranks.pop(index)
+    divs.pop(index)
+    ids.pop(index)
+    print("Everything is deleted")
+    return names,ranks,divs,ids
 
 
 
