@@ -72,6 +72,16 @@ def remove_members(names,ranks,divs,ids):
     return names,ranks,divs,ids
 
 
+def update_members(names,ranks,ids):
+    ids_slct = input("what is the id of the person you are trying to add:")
+    index = ids.index(ids_slct)
+    rank_change = input("What rank would you like to change it to:")
+    ranks[index] = rank_change
+    print(ranks)
+    print("Updated")
+    return names , ranks , ids
+
+
 
 
 
