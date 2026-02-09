@@ -87,6 +87,14 @@ def display_roster(names,ranks,divs,ids):
         
     
     return names,ranks,divs,ids
+def filter_by_division(names,divs):
+    div_ask = input("What is the divsion: ")
+    for i in range(len(divs)):
+        if div_ask == divs[i]:
+            print("Name found:",names[i])
+    #else:
+        #print("None were found")
+    return names, divs
 
 
 
