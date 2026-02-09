@@ -81,6 +81,13 @@ def update_members(names,ranks,ids):
     print("Updated")
     return names , ranks , ids
 
+def display_roster(names,ranks,divs,ids):
+    for i in range(len(ids)):
+        print(f'name:',names[i],'rank:',ranks[i],'Divison:',divs[i],'ID:',ids[i])
+        
+    
+    return names,ranks,divs,ids
+
 
 
 
