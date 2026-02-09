@@ -104,6 +104,13 @@ def filter_by_division(names,divs):
     #else:
         #print("None were found")
     return names, divs
+def count_officers(ranks):
+    total = 0
+    for i in ranks:
+        if i == "Captain" or i == "Commander":
+            total += 1
+
+    print("Total Captains or Commanders:",total)
 
 
 
